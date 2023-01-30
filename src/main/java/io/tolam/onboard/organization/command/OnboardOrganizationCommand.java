@@ -45,13 +45,8 @@ public class OnboardOrganizationCommand implements Runnable {
       System.out.println("Onboarding Organization with name: [" + name + "]; email: [" + email + "]; description: [" + description + "]; tax ID: [" + taxId + "]");
     }
 
-
-    //TODO: Invoke Asterisms API (?) to create workspace
-    System.out.println(" >>>>>>> " + workspaceCreator.createWorkspace(name)
-        .doOnError(ex -> {
-          System.out.println("Exception: " + ex.getStackTrace());
-        }).block());
-
+    String workspaceId = workspaceCreator.createWorkspace(name, email).block();
+    System.out.println(" >>>>>>> " + workspaceId);
 
     //TODO: Make HTTP Request to create Organization
 

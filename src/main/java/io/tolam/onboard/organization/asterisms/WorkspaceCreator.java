@@ -12,6 +12,9 @@ import io.asterisms.auth.sdk.authentication.UserAccountAuthenticator;
 import reactor.core.publisher.Mono;
 import io.asterisms.core.responses.SuccessResponseWithEntity;
 
+import java.util.UUID;
+import java.util.function.Function;
+
 @Singleton
 public class WorkspaceCreator {
 
@@ -25,25 +28,26 @@ public class WorkspaceCreator {
     this.workspaceProvisioningClient = workspaceProvisioningClient;
   }
 
-  public Mono<String> createWorkspace(String name) {
+  public Mono<String> createWorkspace(String name, String email) {
 
 
     return authenticate().flatMap(authorizationToken ->
 
-        workspaceProvisioningClient.provisionWorkspace(authorizationToken.getToken(),
-            new WorkspaceProvisioningConfiguration(name, Workspace.RegistrationMode.OPEN, "demo@example.com")
-        ).map(workspaceProvisionedDataSuccessResponseWithEntity -> {
-          return workspaceProvisionedDataSuccessResponseWithEntity.getEntity().getWorkspace().getId();
-        })
+        workspaceProvisioningClient.provisionWorkspace("Bearer " + authorizationToken.getToken(),
+            new WorkspaceProvisioningConfiguration(name, Workspace.RegistrationMode.OPEN, email)
+        ).map(getResponse())
 
     ).flatMap(uuid -> {
 
-      //provision the Tolam org using workspace uuid as OrganizationId
-
+      System.out.println(" >>>>>>> uuid: " + uuid.toString());
       return Mono.just(uuid.toString());
     });
 
 
+  }
+
+  private static Function<SuccessResponseWithEntity<WorkspaceProvisionedData>, UUID> getResponse() {
+    return workspaceProvisionedDataSuccessResponseWithEntity -> workspaceProvisionedDataSuccessResponseWithEntity.getEntity().getWorkspace().getId();
   }
 
 
