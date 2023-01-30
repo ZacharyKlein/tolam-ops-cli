@@ -1,0 +1,2 @@
+[engine:junit-jupiter]/[class:io.tolam.TolamCommandTest]/[method:testWithCommandLineOption()]
+[engine:junit-jupiter]/[class:io.tolam.io.tolam.onboard.organization.command.OnboardOrganizationCommandTest]/[method:testWithCommandLineOption()]

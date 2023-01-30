@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Class-Path: resources/ classes/ libs/asterisms-account-sdk-1.1.0-SNAPSHO
+ T.jar libs/asterisms-account-spi-1.1.0-SNAPSHOT.jar libs/asterisms-auth
+ -sdk-1.1.0-SNAPSHOT.jar libs/asterisms-auth-spi-1.1.0-SNAPSHOT.jar libs
+ /asterisms-security-1.1.0-SNAPSHOT.jar libs/asterisms-core-1.1.0-SNAPSH
+ OT.jar libs/micronaut-cache-core-3.5.0.jar libs/micronaut-reactor-http-
+ client-2.5.0.jar libs/micronaut-reactor-2.5.0.jar libs/micronaut-securi
+ ty-jwt-3.9.2.jar libs/micronaut-security-session-3.9.2.jar libs/microna
+ ut-security-3.9.2.jar libs/micronaut-security-annotations-3.9.2.jar lib
+ s/micronaut-picocli-4.3.0.jar libs/picocli-4.6.3.jar libs/micronaut-htt
+ p-client-3.8.2.jar libs/asterisms-core-libs-1.1.0-SNAPSHOT.jar libs/mic
+ ronaut-http-server-3.8.2.jar libs/micronaut-session-3.8.2.jar libs/micr
+ onaut-http-netty-3.8.2.jar libs/micronaut-websocket-3.8.2.jar libs/micr
+ onaut-http-client-core-3.8.2.jar libs/micronaut-runtime-3.8.2.jar libs/
+ micronaut-jackson-databind-3.8.2.jar libs/micronaut-jackson-core-3.8.2.
+ jar libs/micronaut-json-core-3.8.2.jar libs/micronaut-context-3.8.2.jar
+  libs/micronaut-aop-3.8.2.jar libs/micronaut-router-3.8.2.jar libs/micr
+ onaut-http-3.8.2.jar libs/micronaut-validation-3.8.2.jar libs/micronaut
+ -buffer-netty-3.8.2.jar libs/micronaut-inject-3.8.2.jar libs/jakarta.an
+ notation-api-2.1.1.jar libs/logback-classic-1.2.11.jar libs/jackson-dat
+ atype-jdk8-2.14.1.jar libs/jackson-datatype-jsr310-2.14.1.jar libs/jack
+ son-databind-2.14.1.jar libs/jackson-core-2.14.1.jar libs/jackson-annot
+ ations-2.14.1.jar libs/javax.annotation-api-1.3.2.jar libs/guava-31.1-j
+ re.jar libs/jsr305-3.0.2.jar libs/logback-core-1.2.11.jar libs/netty-ha
+ ndler-proxy-4.1.86.Final.jar libs/netty-codec-http2-4.1.86.Final.jar li
+ bs/netty-codec-http-4.1.86.Final.jar libs/netty-codec-socks-4.1.86.Fina
+ l.jar libs/netty-handler-4.1.86.Final.jar libs/netty-codec-4.1.86.Final
+ .jar libs/netty-transport-native-unix-common-4.1.86.Final.jar libs/nett
+ y-transport-4.1.86.Final.jar libs/netty-buffer-4.1.86.Final.jar libs/re
+ actor-core-3.5.0.jar libs/micronaut-core-reactive-3.8.2.jar libs/reacti
+ ve-streams-1.0.4.jar libs/micronaut-core-3.8.2.jar libs/slf4j-api-1.7.3
+ 6.jar libs/snakeyaml-1.33.jar libs/swagger-annotations-2.2.7.jar libs/v
+ alidation-api-2.0.1.Final.jar libs/javax.persistence-api-2.2.jar libs/i
+ paddress-5.3.3.jar libs/gson-2.9.0.jar libs/srp6a-2.1.0.jar libs/failur
+ eaccess-1.0.1.jar libs/listenablefuture-9999.0-empty-to-avoid-conflict-
+ with-guava.jar libs/checker-qual-3.12.0.jar libs/error_prone_annotation
+ s-2.11.0.jar libs/j2objc-annotations-1.3.jar libs/jakarta.inject-api-2.
+ 0.1.jar libs/nimbus-jose-jwt-9.25.6.jar libs/netty-resolver-4.1.86.Fina
+ l.jar libs/netty-common-4.1.86.Final.jar libs/jcip-annotations-1.0-1.ja
+ r
+Main-Class: io.tolam.TolamCommand
+

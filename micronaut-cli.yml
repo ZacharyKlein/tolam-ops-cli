@@ -1,0 +1,6 @@
+applicationType: cli
+defaultPackage: io.tolam
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, gradle, http-client, jackson-databind, java, junit, logback, micronaut-build, picocli, picocli-java-application, picocli-junit, readme, shade, yaml]

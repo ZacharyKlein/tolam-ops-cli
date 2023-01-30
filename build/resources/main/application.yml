@@ -1,0 +1,26 @@
+micronaut:
+  application:
+    name: tolam
+  http:
+    client:
+      connect-timeout: 1m
+      read-timeout: 1m
+    services:
+      auth:
+        url: "https://auth.asterisms.local"
+        connect-timeout: 60s
+        read-timeout: 120s
+        log-level: error
+      account:
+        url: "https://account.asterisms.local"
+        connect-timeout: 60s
+        read-timeout: 120s
+        log-level: error
+---
+asterisms:
+  clients:
+    account:
+      url: https://account.asterisms.local
+
+
+

@@ -1,0 +1,13 @@
+{
+  "resources" : {
+    "includes" : [ {
+      "pattern" : "\\QMETA-INF/micronaut/io.micronaut.inject.BeanDefinitionReference/io.tolam.onboard.organization.client.$OnboardOrganizationClient$Intercepted$Definition$Reference\\E"
+    }, {
+      "pattern" : "\\Qlogback.xml\\E"
+    }, {
+      "pattern" : "\\Qapplication.yml\\E"
+    } ],
+    "excludes" : [ ]
+  },
+  "bundles" : [ ]
+}
