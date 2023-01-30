@@ -3,6 +3,8 @@ micronaut:
     name: tolam
   http:
     client:
+      ssl:
+        insecure-trust-all-certificates: true #TODO
       connect-timeout: 1m
       read-timeout: 1m
     services:
@@ -21,6 +23,3 @@ asterisms:
   clients:
     account:
       url: https://account.asterisms.local
-
-
-
